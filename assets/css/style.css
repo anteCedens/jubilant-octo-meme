@@ -1,1 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
+body {
+    margin: 0;
+    background-color: #1B2440;
+    font-family: "Orbitron", monospace;
+}
+
+button {
+    font-family: "Cute Font", Courier New, Courier, monospace;
+}
+
+.container,
+.container > * {
+    display: flex;
+    justify-content: space-evenly;
+    border: solid red;
+}
+
+#home-div,
+#guest-div,
+#home-score-div,
+#guest-score-div {
+    width: 20%;
+}
+
+#home-div,
+#guest-div {
+    background-color: black; /* development */
+    color: white;
+}
+
+#home-score-div,
+#guest-score-div {
+    background-color: black;
+    color: red;
+}
