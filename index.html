@@ -1,49 +1,52 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
         
-        <div class="container">
-            <div id="home-div">
-                <h3>HOME</h3>
-            </div>
-            <div id="guest-div">
-                <h3>GUEST</h3>
-            </div>
+    <div class="container">
+        <div id="home-div">
+            <h3>HOME</h3>
         </div>
-        
-        <div class="container digits">
-            <div id="home-score-div">
-                <p id="home-score">0</p>
-            </div>
-            <div id="guest-score-div">
-                <p id="guest-score">0</p>
-            </div>
+        <div id="guest-div">
+            <h3>GUEST</h3>
         </div>
-        
-        <div class="container digits">
-            <div id="home-buttons">
-                <button onclick="plusOneHome()">+1</button>
-                <button onclick="plusTwoHome()">+2</button>
-                <button onclick="plusThreeHome()">+3</button>
-            </div>
-            <div id="away-buttons">
-                <button onclick="plusOneGuest()">+1</button>
-                <button onclick="plusTwoGuest()">+2</button>
-                <button onclick="plusThreeGuest()">+3</button>
-            </div>
+    </div>
+    
+    <div class="container digits">
+        <div id="home-score-div">
+            <p id="home-score">0</p>
         </div>
-        
-        <div class="container">
-            <div>
-                <button id="new-game" onclick="resetBoard()">
-                    New Game
-                </button>
-            </div>
+        <div id="guest-score-div">
+            <p id="guest-score">0</p>
         </div>
-        
-        <script src="assets/js/script.js"></script>
-    </body>
+    </div>
+    
+    <div class="container digits">
+        <div id="home-buttons">
+            <button onclick="plusOneHome()">+1</button>
+            <button onclick="plusTwoHome()">+2</button>
+            <button onclick="plusThreeHome()">+3</button>
+        </div>
+        <div id="away-buttons">
+            <button onclick="plusOneGuest()">+1</button>
+            <button onclick="plusTwoGuest()">+2</button>
+            <button onclick="plusThreeGuest()">+3</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div>
+            <button id="new-game" onclick="resetBoard()">
+                New Game
+            </button>
+        </div>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+</body>
 </html>
