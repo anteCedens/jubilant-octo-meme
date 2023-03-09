@@ -29,12 +29,14 @@ button {
     border: solid red;
 }
 
+/*
 #home-div,
 #guest-div,
 #home-score-div,
 #guest-score-div {
     width: 20%;
 }
+*/
 
 #home-div,
 #guest-div {

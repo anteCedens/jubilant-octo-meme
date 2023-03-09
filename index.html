@@ -14,52 +14,56 @@
     </head>
 
     <body>
+        <div class="container row">
 
-        <!-- .container joined with Materialized help centering -->
-        <div class="container">
-            <div id="home-div">
-                <h3>HOME</h3>
+            <!-- .container joined with Materialize help centering -->
+            <div class="container row" id="headings">
+                <div class="col s4" id="home-div">
+                    <h3>HOME</h3>
+                </div>
+                <div class="col s4"></div>
+                <div class="col s4" id="guest-div">
+                    <h3>GUEST</h3>
+                </div>
             </div>
-            <div id="guest-div">
-                <h3>GUEST</h3>
+
+            <div class="container row" id="digits">
+                <div id="home-score-div">
+                    <p id="home-score">0</p>
+                </div>
+                <div id="guest-score-div">
+                    <p id="guest-score">0</p>
+                </div>
             </div>
+
+            <div class="container row" id="buttons">
+                <div id="home-buttons">
+                    <button onclick="plusOneHome()">+1</button>
+                    <button onclick="plusTwoHome()">+2</button>
+                    <button onclick="plusThreeHome()">+3</button>
+                </div>
+                <div id="away-buttons">
+                    <button onclick="plusOneGuest()">+1</button>
+                    <button onclick="plusTwoGuest()">+2</button>
+                    <button onclick="plusThreeGuest()">+3</button>
+                </div>
+            </div>
+
+            <div class="container row">
+                <div>
+                    <button id="new-game" onclick="resetBoard()">
+                        New Game
+                    </button>
+                </div>
+            </div>
+
+            <!-- JavaScript at end of body for optimized loading -->
+            <!-- Compiled and minified JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <!-- Custom JavaScript -->
+            <script src="assets/js/script.js"></script>
         </div>
 
-        <div class="container digits">
-            <div id="home-score-div">
-                <p id="home-score">0</p>
-            </div>
-            <div id="guest-score-div">
-                <p id="guest-score">0</p>
-            </div>
-        </div>
-
-        <div class="container digits">
-            <div id="home-buttons">
-                <button onclick="plusOneHome()">+1</button>
-                <button onclick="plusTwoHome()">+2</button>
-                <button onclick="plusThreeHome()">+3</button>
-            </div>
-            <div id="away-buttons">
-                <button onclick="plusOneGuest()">+1</button>
-                <button onclick="plusTwoGuest()">+2</button>
-                <button onclick="plusThreeGuest()">+3</button>
-            </div>
-        </div>
-
-        <div class="container">
-            <div>
-                <button id="new-game" onclick="resetBoard()">
-                    New Game
-                </button>
-            </div>
-        </div>
-
-        <!-- JavaScript at end of body for optimized loading -->
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <!-- Custom JavaScript -->
-        <script src="assets/js/script.js"></script>
     </body>
 
 </html>
