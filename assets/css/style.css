@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
-body {
+/*Convention: overwritting (i.e. reseting) these stylings, just in case.*/
+* {
+    padding: 0;
+    border: 0;
     margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
     background-color: #1B2440;
     font-family: "Orbitron", monospace;
 }
@@ -12,9 +23,9 @@ button {
 }
 
 .container,
-.container > * {
-    display: flex;
-    justify-content: space-evenly;
+.container>* {
+    /*display: flex;
+    justify-content: space-evenly;*/
     border: solid red;
 }
 
@@ -27,7 +38,8 @@ button {
 
 #home-div,
 #guest-div {
-    background-color: black; /* development */
+    background-color: black;
+    /* development */
     color: white;
 }
 
